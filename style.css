@@ -1,0 +1,106 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .header {
+  height: px;
+} */
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #023047;
+  color: white;
+  height: 72px;
+}
+
+.navbar__title {
+  margin: 0;
+}
+
+.navbar__user-icon {
+  background-color: cyan;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background-color: #ecf1f3;
+  gap: 16px;
+}
+
+.weather-search {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.weather-search__text {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.weather-search__btn {
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: #023047;
+  color: #ecf1f3;
+}
+
+.weather-search__btn:hover {
+  cursor: pointer;
+}
+
+.current-weather {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'icon city '
+    'icon temp';
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 16px;
+
+  align-items: center;
+}
+
+.current-weather__icon {
+  grid-area: icon;
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.1));
+}
+
+.current-weather__location {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.current-weather__temp {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-weather__temp__current-temp {
+  margin: 0;
+}
