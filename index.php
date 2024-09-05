@@ -1,3 +1,6 @@
+<?php
+  include('header.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,12 +16,6 @@
     <title>Weather App</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <h1 class="navbar__title"><a href="./">Weather App</a></h1>
-        <span><div class="navbar__user-icon"></div></span>
-      </nav>
-    </header>
     <main>
       <form class="weather-search">
         <label for="search">Ciudad</label>
