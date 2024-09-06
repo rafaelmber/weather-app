@@ -1,5 +1,11 @@
 <?php
-  include('header.php');
+  session_start();
+
+  if(!isset($_SESSION['email'])){
+    header('Location: login.php');
+    exit();
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,14 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css">
     <title>Weather App</title>
   </head>
   <body>
+    <?php
+      include('header.php');
+    ?>
     <main>
-      <form class="weather-search">
-        <label for="search">Ciudad</label>
-        <input type="text" name="search" class="weather-search__text" />
+      <form id='search-form' class="weather-search">
+        <label for="search-text">Ciudad</label>
+        <input id='search-text'type="text" name="search-text" class="weather-search__text" />
         <input type="submit" value="Search" class="weather-search__btn" />
       </form>
       <section class="current-weather">
@@ -30,8 +41,11 @@
           <small class="current-weather__temp">22° | 35°. Sensación térmica: 40°</small>
         </div>
       </section>
-      <section></section>
+      <section><a href='logout.php'>Log out</a></section>
     </main>
-    <footer class="footer">Rafael Martinez Bermudez - 2024</footer>
+    <?php
+      include('footer.php');
+    ?>
+    <script src='./index.js'></script>
   </body>
 </html>
