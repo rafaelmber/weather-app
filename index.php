@@ -20,7 +20,6 @@
     />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="header.css">
     <title>Weather App</title>
   </head>
   <body>
@@ -28,7 +27,7 @@
       include('header.php');
     ?>
     <main>
-      <form id='search-form' class="weather-search">
+      <form id='search-form' class="weather-search" method='POST'>
         <label for="search-text">Ciudad</label>
         <input id='search-text'type="text" name="search-text" class="weather-search__text" />
         <input type="submit" value="Search" class="weather-search__btn" />
@@ -41,7 +40,7 @@
           <small class="current-weather__temp">22° | 35°. Sensación térmica: 40°</small>
         </div>
       </section>
-      <section><a href='logout.php'>Log out</a></section>
+      <section></section>
     </main>
     <?php
       include('footer.php');

@@ -18,6 +18,12 @@ main {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.login-form__title {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 .login-form__input {
   padding: 8px 16px;
   border-radius: 16px;
@@ -36,4 +42,8 @@ main {
 
 .login-form__btn:focus {
   cursor: pointer;
+}
+
+.login-form__signup {
+  color: #219ebc;
 }
