@@ -33,14 +33,17 @@
         <input type="submit" value="Search" class="weather-search__btn" />
       </form>
       <section class="current-weather">
-        <img class="current-weather__icon" src="https://openweathermap.org/img/wn/10d@2x.png" />
-        <h2 class="current-weather__location">Cali</h2>
+        <img class="current-weather__icon" src="https://openweathermap.org/img/wn/10d@2x.png" id='current-weather__icon'/>
+        <div>
+          <h2 class="current-weather__location" id='current_weather__location'>Cali</h2>
+          <p class='current-weather__description' id="current-weather__description">Soleado</p>
+        </div>
         <div class="current-weather__temp">
-          <h3 class="current-weather__temp__current-temp">28° C</h3>
-          <small class="current-weather__temp">22° | 35°. Sensación térmica: 40°</small>
+          <h3 class="current-weather__temp__current-temp" id='current_weather__temperature'>28° C</h3>
+          <small class="current-weather__temp" id='current_weather__more_temp'>22° | 35°. Sensación térmica: 40°</small>
         </div>
       </section>
-      <section></section>
+      <a class='history-button' href='history.php'>Historial de búsquedas</a>
     </main>
     <?php
       include('footer.php');
