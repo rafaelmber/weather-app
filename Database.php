@@ -24,16 +24,21 @@ class Database{
 
   public function select($sql){
     $result = $this->conn->query($sql);
-    if($result->num_rows > 0){
-      return $result->fetch_all(MYSQLI_ASSOC);
-    } else{
-      return [];
+
+    if ($result === false) {
+        return []; 
+    }
+
+    if ($result->num_rows > 0) {
+        return $result->fetch_all(MYSQLI_ASSOC);
+    } else {
+        return [];
     }
   }
 
   public function execute($sql){
     if($this->conn->query($sql) === TRUE){
-      return true;
+      return $this->conn->insert_id;
     } else{
       return "Error". $this->conn->error;
     }
