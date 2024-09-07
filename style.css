@@ -46,6 +46,8 @@ main {
   border-radius: 16px;
 
   align-items: center;
+  background: rgb(75, 83, 158);
+  background: linear-gradient(90deg, rgba(75, 83, 158, 1) 0%, rgba(219, 235, 236, 1) 35%);
 }
 
 .current-weather__icon {
@@ -59,6 +61,9 @@ main {
 .current-weather__location {
   margin: 0;
   font-size: 1.5rem;
+}
+.current-weather__temp__current-temp {
+  margin: 0;
 }
 
 .current-weather__temp {

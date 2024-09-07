@@ -44,6 +44,10 @@ main {
   cursor: pointer;
 }
 
-.login-form__signup {
+.login-form__signup,
+.login-form__signup:visited,
+.login-form__signup:active {
   color: #219ebc;
+  text-decoration: underline;
+  font-weight: bold;
 }
