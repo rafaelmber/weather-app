@@ -30,7 +30,7 @@
       <input type='password' id='password' name='password' class='login-form__input' required/>
       <label for='password2'>Re-entry the Password</label>
       <input type='password' id='password2' name='password2' class='login-form__input' required/>
-      <input type='submit' value='Log in' class='login-form__btn'/>
+      <input type='submit' value='Sign Up' class='login-form__btn'/>
       <p>Have an account? Log in <a href="login.php" class='login-form__signup'>here</a></p>
     </form>
   </main>

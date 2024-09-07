@@ -27,7 +27,7 @@
       <label for='password'>Password</label>
       <input type='password' id='password' name='password' class='login-form__input' required/>
       <input type='submit' value='Log in' class='login-form__btn'/>
-      <p>Create a new account <a href="signup.php" class='login-form__signup'>here</a></p>
+      <p>Create a new account <b><a href="signup.php" class='login-form__signup'>here</a><b></p>
     </form>
   </main>
   <?php
