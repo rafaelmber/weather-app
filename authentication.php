@@ -15,7 +15,7 @@
 
     $password = password_hash($password, PASSWORD_DEFAULT);
 
-    $query = "SELECT * FROM auth_users WHERE email='$email' and MD5('$password')";
+    $query = "SELECT * FROM auth_users WHERE email='$email' and '$password'";
 
     $result = $db->select($query);
 
